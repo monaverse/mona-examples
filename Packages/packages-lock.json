@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.monaverse.brainssdk": {
-      "version": "0.11.0",
+      "version": "0.12.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -15,7 +15,7 @@
         "com.unity.modules.uielements": "1.0.0",
         "com.unity.textmeshpro": "3.0.6",
         "com.unity.inputsystem": "1.6.3",
-        "com.monaverse.coresdk": "0.8.0",
+        "com.monaverse.coresdk": "0.9.0",
         "com.vrmc.gltf": "0.114.0",
         "com.vrmc.univrm": "0.114.0",
         "com.vrmc.vrm": "0.114.0",
@@ -25,7 +25,7 @@
       "url": "https://package.openupm.com"
     },
     "com.monaverse.coresdk": {
-      "version": "0.8.0",
+      "version": "0.9.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -40,7 +40,7 @@
       "url": "https://package.openupm.com"
     },
     "com.monaverse.unitygltf": {
-      "version": "0.3.0",
+      "version": "0.4.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -48,8 +48,8 @@
         "com.unity.modules.imageconversion": "1.0.0",
         "com.unity.shadergraph": "10.0.0",
         "com.unity.mathematics": "1.0.0",
-        "com.monaverse.brainssdk": "0.11.0",
-        "com.monaverse.coresdk": "0.8.0"
+        "com.monaverse.brainssdk": "0.12.0",
+        "com.monaverse.coresdk": "0.9.0"
       },
       "url": "https://package.openupm.com"
     },
