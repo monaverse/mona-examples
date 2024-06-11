@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
+  m_Name: XMP_TreasureChestTop
+  m_EditorClassIdentifier: 
+  _name: EX_TreasureChestTop
+  _propertyType: 0
+  _loggingEnabled: 0
+  _legacyMonaPlatforms: 0
+  _sourceUrl: 
+  _defaultVariables:
+    rid: 1597717087361433768
+  _priority: 0
+  _corePage:
+    rid: 1597717087361433769
+  _statePages: []
+  _began: 0
+  _monaTags:
+  - Default
+  _monaAssets: []
+  _monaTagSource: {fileID: 11400000, guid: 7e6321709ba614d29b694b0d32b37a7a, type: 2}
+  _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1597717087361433768
+      type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _values:
+        - rid: 1597717087361433771
+    - rid: 1597717087361433769
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 1597717087361433770
+        _name: Core
+        _isCore: 1
+        _isActive: 0
+    - rid: 1597717087361433770
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717087361433772
+        - rid: 1597717087361433773
+        - rid: 1597717087361433810
+        - rid: 1597717087361433775
+        - rid: 1597717087361433776
+        _result: 1
+        _muted: 0
+    - rid: 1597717087361433771
+      type: {class: MonaVariablesBool, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: IsOpen
+        _value: 0
+    - rid: 1597717087361433772
+      type: {class: BoolValueInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: BoolValue
+        _name: Bool = Equals
+        _category: Booleans
+        _muted: 0
+        _valueName: IsOpen
+        _operator: 0
+        _value: 0
+        _valueValueName: 
+    - rid: 1597717087361433773
+      type: {class: OnNearInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnNear
+        _name: When Near
+        _category: Proximity
+        _muted: 0
+        _tag: Player
+        _distance: 2.5
+        _distanceValueName: 
+        _fieldOfView: 180
+        _fieldOfViewValueName: 
+    - rid: 1597717087361433775
+      type: {class: ChangeBoolValueInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ChangeBoolValue
+        _name: Set Bool Value
+        _category: Booleans
+        _muted: 0
+        _valueName: IsOpen
+        _value: 1
+        _valueValueName: 
+    - rid: 1597717087361433776
+      type: {class: SpinUpInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Spin Up
+        _name: "Rotate \u2191 Pitch Up"
+        _category: Rotation
+        _muted: 0
+        _angle: 90
+        _angleValueName: 
+        _mode: 1
+        _value: 1
+        _valueValueName: 
+        _easing: 1
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0
+    - rid: 1597717087361433810
+      type: {class: OnInteractInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnInteract
+        _name: On Interact
+        _category: Input
+        _muted: 0

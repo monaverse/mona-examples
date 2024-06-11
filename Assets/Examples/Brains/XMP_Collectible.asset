@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
+  m_Name: XMP_Collectible
+  m_EditorClassIdentifier: 
+  _name: EX_Collectible
+  _propertyType: 0
+  _loggingEnabled: 0
+  _legacyMonaPlatforms: 0
+  _sourceUrl: 
+  _defaultVariables:
+    rid: 1597717087361433675
+  _priority: 0
+  _corePage:
+    rid: 1597717087361433676
+  _statePages: []
+  _began: 0
+  _monaTags:
+  - Default
+  _monaAssets: []
+  _monaTagSource: {fileID: 11400000, guid: 7e6321709ba614d29b694b0d32b37a7a, type: 2}
+  _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1597717087361433675
+      type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _values: []
+    - rid: 1597717087361433676
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 1597717087361433677
+        - rid: 1597717087361433678
+        - rid: 1597717087361434440
+        _name: Core
+        _isCore: 1
+        _isActive: 0
+    - rid: 1597717087361433677
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717087361433764
+        - rid: 1597717087361433765
+        _result: 1
+        _muted: 0
+    - rid: 1597717087361433678
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717087361433766
+        _result: 1
+        _muted: 0
+    - rid: 1597717087361433764
+      type: {class: MoveAlongYInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Move Along Y
+        _name: "Move \u2191 Zenith (Y+)"
+        _category: Global Movement
+        _muted: 0
+        _distance: 0.25
+        _distanceValueName: 
+        _coordinatesName: []
+        _moveToCoordinates: {x: 0, y: 0, z: 0}
+        _movementPlane: 0
+        _mode: 1
+        _value: 1
+        _valueValueName: 
+        _easing: 1
+        _useStartDirection: 0
+    - rid: 1597717087361433765
+      type: {class: MoveAlongYNegativeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Move Along Y Negative
+        _name: "Move \u2193 Nadir (Y-)"
+        _category: Global Movement
+        _muted: 0
+        _distance: 0.25
+        _distanceValueName: 
+        _coordinatesName: []
+        _moveToCoordinates: {x: 0, y: 0, z: 0}
+        _movementPlane: 0
+        _mode: 1
+        _value: 1
+        _valueValueName: 
+        _easing: 1
+        _useStartDirection: 0
+    - rid: 1597717087361433766
+      type: {class: SpinRightInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Spin Right
+        _name: "Rotate \u2192 Turn Right"
+        _category: Rotation
+        _muted: 0
+        _angle: 180
+        _angleValueName: 
+        _mode: 1
+        _value: 1
+        _valueValueName: 
+        _easing: 0
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0
+    - rid: 1597717087361434440
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717087361434441
+        - rid: 1597717087361434442
+        _result: 1
+        _muted: 0
+    - rid: 1597717087361434441
+      type: {class: OnStartInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnStart
+        _name: On Start
+        _category: General
+        _muted: 0
+    - rid: 1597717087361434442
+      type: {class: SetAsTriggerInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Physics,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: SetAsTrigger
+        _name: Is Trigger Volume
+        _category: Physics
+        _muted: 0
+        _value: 1
+        _valueValueName: 

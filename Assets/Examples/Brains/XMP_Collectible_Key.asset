@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
+  m_Name: XMP_Collectible_Key
+  m_EditorClassIdentifier: 
+  _name: EX_Collectible_Key
+  _propertyType: 0
+  _loggingEnabled: 0
+  _legacyMonaPlatforms: 0
+  _sourceUrl: 
+  _defaultVariables:
+    rid: 1597717087361433817
+  _priority: 0
+  _corePage:
+    rid: 1597717087361433818
+  _statePages: []
+  _began: 0
+  _monaTags:
+  - Default
+  _monaAssets: []
+  _monaTagSource: {fileID: 11400000, guid: 7e6321709ba614d29b694b0d32b37a7a, type: 2}
+  _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1597717087361433817
+      type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _values: []
+    - rid: 1597717087361433818
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 1597717087361433819
+        _name: Core
+        _isCore: 1
+        _isActive: 0
+    - rid: 1597717087361433819
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717087361433828
+        - rid: 1597717087361433829
+        - rid: 1597717087361433830
+        _result: 1
+        _muted: 0
+    - rid: 1597717087361433828
+      type: {class: OnEnterInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnEnter
+        _name: On Enter
+        _category: Proximity
+        _muted: 0
+        _tag: Player
+    - rid: 1597717087361433829
+      type: {class: BroadcastMessageToTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Broadcasting,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: BroadcastMessage
+        _name: Send Message
+        _category: General
+        _muted: 0
+        _messageTarget: 0
+        _tag: Player
+        _bodyArray: 
+        _message: KeyCollected
+        _messageName: 
+        _includeAttached: 0
+        _includeAttachedName: 
+        _appendPlayerId: 0
+    - rid: 1597717087361433830
+      type: {class: DisableInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Disable
+        _name: Disable
+        _category: Enable / Disable
+        _muted: 0
