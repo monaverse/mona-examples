@@ -3556,7 +3556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _brainGraphs:
-  - {fileID: 11400000, guid: 3dd61b99c513f49b8bc716e83a2409e6, type: 2}
   - {fileID: 11400000, guid: 6d4e5c102522c4a0fb21d6fde7a5f625, type: 2}
   _brainUrls: []
 --- !u!114 &1973168962
