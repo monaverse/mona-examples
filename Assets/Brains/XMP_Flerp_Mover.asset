@@ -41,16 +41,17 @@ MonoBehaviour:
       data:
         _values:
         - rid: 1597717103989752334
-        - rid: 1597717103989752339
+        - rid: 1597717108065566774
         - rid: 1597717103989752340
         - rid: 1597717103989752341
         - rid: 1597717103989752342
+        - rid: 1597717103989752722
+        - rid: 1597717103989752816
         - rid: 1597717103989752687
         - rid: 1597717103989752688
-        - rid: 1597717103989752722
-        - rid: 1597717103989752723
-        - rid: 1597717103989752726
         - rid: 1597717103989752727
+        - rid: 1597717103989752723
+        - rid: 1597717103989752817
     - rid: 1597717103989752328
       type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
@@ -62,7 +63,9 @@ MonoBehaviour:
     - rid: 1597717103989752329
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
-        _instructionTiles: []
+        _instructionTiles:
+        - rid: 1597717108065566861
+        - rid: 1597717108065566862
         _result: 1
         _muted: 0
     - rid: 1597717103989752330
@@ -72,7 +75,7 @@ MonoBehaviour:
         - rid: 1597717103989752335
         - rid: 1597717103989752343
         - rid: 1597717103989752559
-        - rid: 1597717103989752728
+        - rid: 1597717103989752818
         _name: Idle
         _isCore: 0
         _isActive: 0
@@ -82,8 +85,9 @@ MonoBehaviour:
         _instructions:
         - rid: 1597717103989752336
         - rid: 1597717103989752654
-        - rid: 1597717103989752560
         - rid: 1597717103989752724
+        - rid: 1597717103989752560
+        - rid: 1597717103989752819
         _name: Aggro
         _isCore: 0
         _isActive: 0
@@ -91,7 +95,6 @@ MonoBehaviour:
       type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructions:
-        - rid: 1597717103989752337
         - rid: 1597717103989752729
         _name: Attack
         _isCore: 0
@@ -100,6 +103,7 @@ MonoBehaviour:
       type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructions:
+        - rid: 1597717108065566860
         - rid: 1597717103989752338
         _name: Defeated
         _isCore: 0
@@ -107,12 +111,12 @@ MonoBehaviour:
     - rid: 1597717103989752334
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
-        _name: Idle_TurnAngle
-        _value: 174.05496
-        _defaultValue: 174.05496
+        _name: RNG_TurnAngle
+        _value: 180.16675
+        _defaultValue: 180.16675
         _roundingType: 0
         _minMaxType: 10
-        _min: 0
+        _min: -360
         _max: 360
         _returnRandomValueFromMinMax: 1
         _allowUIDisplay: 0
@@ -243,10 +247,9 @@ MonoBehaviour:
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
+        - rid: 1597717108065566775
         - rid: 1597717103989752346
         - rid: 1597717103989752345
-        - rid: 1597717103989752344
-        - rid: 1597717103989752347
         _result: 1
         _muted: 0
     - rid: 1597717103989752336
@@ -256,159 +259,19 @@ MonoBehaviour:
         - rid: 1597717103989752563
         _result: 1
         _muted: 0
-    - rid: 1597717103989752337
-      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _instructionTiles: []
-        _result: 1
-        _muted: 0
     - rid: 1597717103989752338
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
-        _instructionTiles: []
+        _instructionTiles:
+        - rid: 1597717108065566866
         _result: 1
         _muted: 0
-    - rid: 1597717103989752339
-      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _name: Idle_MoveDist
-        _value: 1.1691198
-        _defaultValue: 1.1691198
-        _roundingType: 0
-        _minMaxType: 10
-        _min: 1
-        _max: 3
-        _returnRandomValueFromMinMax: 1
-        _allowUIDisplay: 0
-        _displayInUI: 1
-        _displaySpace: 10
-        _screenPosition: 0
-        _objectPosition: 0
-        _priority: 10
-        _displayName:
-          _elementText: 
-          _fontType: 0
-          _elementFont: {fileID: 0}
-          _textAlignment: 0
-          _displayElement: 0
-          _elementType: 0
-          _elementColor: {r: 0, g: 0, b: 0, a: 0}
-          _shadowType: 0
-          _shadowOffset: {x: 0, y: 0}
-        _tooltip:
-          _elementText: 
-          _fontType: 0
-          _elementFont: {fileID: 0}
-          _textAlignment: 0
-          _displayElement: 0
-          _elementType: 0
-          _elementColor: {r: 0, g: 0, b: 0, a: 0}
-          _shadowType: 0
-          _shadowOffset: {x: 0, y: 0}
-        _primaryIcon:
-          _primarySprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _backgroundSprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _foregroundSprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _textDisplay:
-            _elementText: 
-            _fontType: 0
-            _elementFont: {fileID: 0}
-            _textAlignment: 0
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-        _uiBackground:
-          _elementSprite: {fileID: 0}
-          _displayElement: 0
-          _elementType: 0
-          _elementColor: {r: 0, g: 0, b: 0, a: 0}
-          _shadowType: 0
-          _shadowOffset: {x: 0, y: 0}
-        _valueDisplayType: 10
-        _fillType: 0
-        _horizontalGaugeVisual:
-          _primarySprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _backgroundSprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _foregroundSprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _textDisplay:
-            _elementText: 
-            _fontType: 0
-            _elementFont: {fileID: 0}
-            _textAlignment: 0
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-        _numberDisplay:
-          _elementText: 
-          _fontType: 0
-          _elementFont: {fileID: 0}
-          _textAlignment: 0
-          _displayElement: 0
-          _elementType: 0
-          _elementColor: {r: 0, g: 0, b: 0, a: 0}
-          _shadowType: 0
-          _shadowOffset: {x: 0, y: 0}
-        _numericalFormatting:
-          _minMaxFormatting: 0
-          _numberPrefix: 
-          _numberSuffix: 
-          _numberFormatType: 0
-          _timeFormatting: 40
-          _timeDisplayFrameRate: 0
-          _timeSeparatorType: 0
-          _thousandthPlaceSeparatorType: 0
-          _decimalPlaceSeparatorType: 0
-          _decimalOverrideType: 0
-          _customDecimalPlaces: 2
-        _pulseType: 0
-        _pulseStartValue: 0.25
-        _pulseFrequency: 0.5
     - rid: 1597717103989752340
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
         _name: Idle_Wait
-        _value: 1.708302
-        _defaultValue: 1.708302
+        _value: 1.2517813
+        _defaultValue: 1.2517813
         _roundingType: 0
         _minMaxType: 10
         _min: 0.5
@@ -815,22 +678,6 @@ MonoBehaviour:
         - rid: 1597717103989752348
         _result: 1
         _muted: 0
-    - rid: 1597717103989752344
-      type: {class: SpinLeftInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
-        asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: Spin Left
-        _name: "Rotate \u2190 Turn Left"
-        _category: Rotation
-        _muted: 1
-        _angle: 90
-        _angleValueName: Idle_TurnAngle
-        _mode: 1
-        _value: 1
-        _valueValueName: Idle_TurnSpeed
-        _easing: 1
-        _onlyTurnWhenMoving: 0
-        _lookStraightAhead: 0
     - rid: 1597717103989752345
       type: {class: WaitInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Timing,
         asm: com.monaverse.sdk.brains.runtime}
@@ -857,16 +704,6 @@ MonoBehaviour:
         _easing: 1
         _onlyTurnWhenMoving: 0
         _lookStraightAhead: 0
-    - rid: 1597717103989752347
-      type: {class: WaitInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Timing,
-        asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: Wait
-        _name: Wait
-        _category: General
-        _muted: 1
-        _seconds: 1
-        _secondsValueName: Idle_Wait
     - rid: 1597717103989752348
       type: {class: MoveForwardInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
         asm: com.monaverse.sdk.brains.runtime}
@@ -876,11 +713,11 @@ MonoBehaviour:
         _category: Local Movement
         _muted: 0
         _distance: 1
-        _distanceValueName: Idle_MoveDist
+        _distanceValueName: Idle_MoveSpeed
         _coordinatesName: []
         _moveToCoordinates: {x: 0, y: 0, z: 0}
         _movementPlane: 0
-        _mode: 2
+        _mode: 0
         _value: 1
         _valueValueName: Idle_MoveTime
         _easing: 1
@@ -898,6 +735,7 @@ MonoBehaviour:
       data:
         _instructionTiles:
         - rid: 1597717103989752565
+        - rid: 1597717108065567092
         - rid: 1597717103989752566
         _result: 1
         _muted: 0
@@ -910,7 +748,7 @@ MonoBehaviour:
         _muted: 0
         _tag: Player
         _distance: 4
-        _distanceValueName: Attack_Distance
+        _distanceValueName: Aggro_Distance
         _fieldOfView: 180
         _fieldOfViewValueName: 
     - rid: 1597717103989752562
@@ -949,7 +787,7 @@ MonoBehaviour:
         _muted: 0
         _tag: Player
         _distance: 6
-        _distanceValueName: Idle_Distance
+        _distanceValueName: 
     - rid: 1597717103989752566
       type: {class: ChangeStateInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
         asm: com.monaverse.sdk.brains.runtime}
@@ -958,7 +796,7 @@ MonoBehaviour:
         _name: Change State
         _category: General
         _muted: 0
-        _changeState: Aggro
+        _changeState: Idle
         _stateValueName: 
     - rid: 1597717103989752654
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
@@ -1124,8 +962,8 @@ MonoBehaviour:
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
         _name: Aggro_Distance
-        _value: 3
-        _defaultValue: 3
+        _value: 2.5
+        _defaultValue: 2.5
         _roundingType: 0
         _minMaxType: 0
         _min: 0
@@ -1530,6 +1368,7 @@ MonoBehaviour:
       data:
         _instructionTiles:
         - rid: 1597717103989752725
+        - rid: 1597717103989752733
         _result: 1
         _muted: 0
     - rid: 1597717103989752725
@@ -1541,144 +1380,9 @@ MonoBehaviour:
         _muted: 0
         _tag: Player
         _distance: 2
-        _distanceValueName: Idle_MoveDist
+        _distanceValueName: Attack_Distance
         _fieldOfView: 180
         _fieldOfViewValueName: 
-    - rid: 1597717103989752726
-      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
-      data:
-        _name: Idle_Multiplier
-        _value: 1
-        _defaultValue: 1
-        _roundingType: 0
-        _minMaxType: 0
-        _min: 0
-        _max: 10
-        _returnRandomValueFromMinMax: 0
-        _allowUIDisplay: 0
-        _displayInUI: 1
-        _displaySpace: 10
-        _screenPosition: 0
-        _objectPosition: 0
-        _priority: 10
-        _displayName:
-          _elementText: 
-          _fontType: 0
-          _elementFont: {fileID: 0}
-          _textAlignment: 0
-          _displayElement: 0
-          _elementType: 0
-          _elementColor: {r: 0, g: 0, b: 0, a: 0}
-          _shadowType: 0
-          _shadowOffset: {x: 0, y: 0}
-        _tooltip:
-          _elementText: 
-          _fontType: 0
-          _elementFont: {fileID: 0}
-          _textAlignment: 0
-          _displayElement: 0
-          _elementType: 0
-          _elementColor: {r: 0, g: 0, b: 0, a: 0}
-          _shadowType: 0
-          _shadowOffset: {x: 0, y: 0}
-        _primaryIcon:
-          _primarySprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _backgroundSprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _foregroundSprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _textDisplay:
-            _elementText: 
-            _fontType: 0
-            _elementFont: {fileID: 0}
-            _textAlignment: 0
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-        _uiBackground:
-          _elementSprite: {fileID: 0}
-          _displayElement: 0
-          _elementType: 0
-          _elementColor: {r: 0, g: 0, b: 0, a: 0}
-          _shadowType: 0
-          _shadowOffset: {x: 0, y: 0}
-        _valueDisplayType: 10
-        _fillType: 0
-        _horizontalGaugeVisual:
-          _primarySprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _backgroundSprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _foregroundSprite:
-            _elementSprite: {fileID: 0}
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-          _textDisplay:
-            _elementText: 
-            _fontType: 0
-            _elementFont: {fileID: 0}
-            _textAlignment: 0
-            _displayElement: 0
-            _elementType: 0
-            _elementColor: {r: 0, g: 0, b: 0, a: 0}
-            _shadowType: 0
-            _shadowOffset: {x: 0, y: 0}
-        _numberDisplay:
-          _elementText: 
-          _fontType: 0
-          _elementFont: {fileID: 0}
-          _textAlignment: 0
-          _displayElement: 0
-          _elementType: 0
-          _elementColor: {r: 0, g: 0, b: 0, a: 0}
-          _shadowType: 0
-          _shadowOffset: {x: 0, y: 0}
-        _numericalFormatting:
-          _minMaxFormatting: 0
-          _numberPrefix: 
-          _numberSuffix: 
-          _numberFormatType: 0
-          _timeFormatting: 40
-          _timeDisplayFrameRate: 0
-          _timeSeparatorType: 0
-          _thousandthPlaceSeparatorType: 0
-          _decimalPlaceSeparatorType: 0
-          _decimalOverrideType: 0
-          _customDecimalPlaces: 2
-        _pulseType: 0
-        _pulseStartValue: 0.25
-        _pulseFrequency: 0.5
     - rid: 1597717103989752727
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
@@ -1814,31 +1518,16 @@ MonoBehaviour:
         _pulseType: 0
         _pulseStartValue: 0.25
         _pulseFrequency: 0.5
-    - rid: 1597717103989752728
-      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _instructionTiles: []
-        _result: 1
-        _muted: 0
     - rid: 1597717103989752729
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 1597717103989752730
+        - rid: 1597717103989752824
+        - rid: 1597717108065566773
         - rid: 1597717103989752731
         - rid: 1597717103989752732
         _result: 1
         _muted: 0
-    - rid: 1597717103989752730
-      type: {class: WaitInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Timing,
-        asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: Wait
-        _name: Wait
-        _category: General
-        _muted: 0
-        _seconds: 1
-        _secondsValueName: 
     - rid: 1597717103989752731
       type: {class: MoveForwardInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
         asm: com.monaverse.sdk.brains.runtime}
@@ -1853,7 +1542,7 @@ MonoBehaviour:
         _moveToCoordinates: {x: 0, y: 0, z: 0}
         _movementPlane: 0
         _mode: 2
-        _value: 1
+        _value: 10
         _valueValueName: 
         _easing: 1
         _useStartDirection: 0
@@ -1867,3 +1556,651 @@ MonoBehaviour:
         _muted: 0
         _changeState: Aggro
         _stateValueName: 
+    - rid: 1597717103989752733
+      type: {class: ChangeStateInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ChangeState
+        _name: Change State
+        _category: General
+        _muted: 0
+        _changeState: Attack
+        _stateValueName: 
+    - rid: 1597717103989752816
+      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Idle_Multiplier
+        _value: 1
+        _defaultValue: 1
+        _roundingType: 0
+        _minMaxType: 0
+        _min: 0
+        _max: 10
+        _returnRandomValueFromMinMax: 0
+        _allowUIDisplay: 0
+        _displayInUI: 1
+        _displaySpace: 10
+        _screenPosition: 0
+        _objectPosition: 0
+        _priority: 10
+        _displayName:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _tooltip:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _primaryIcon:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _uiBackground:
+          _elementSprite: {fileID: 0}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _valueDisplayType: 10
+        _fillType: 0
+        _horizontalGaugeVisual:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _numberDisplay:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _numericalFormatting:
+          _minMaxFormatting: 0
+          _numberPrefix: 
+          _numberSuffix: 
+          _numberFormatType: 0
+          _timeFormatting: 40
+          _timeDisplayFrameRate: 0
+          _timeSeparatorType: 0
+          _thousandthPlaceSeparatorType: 0
+          _decimalPlaceSeparatorType: 0
+          _decimalOverrideType: 0
+          _customDecimalPlaces: 2
+        _pulseType: 0
+        _pulseStartValue: 0.25
+        _pulseFrequency: 0.5
+    - rid: 1597717103989752817
+      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Attack_Multiplier
+        _value: 10
+        _defaultValue: 10
+        _roundingType: 0
+        _minMaxType: 0
+        _min: 0
+        _max: 10
+        _returnRandomValueFromMinMax: 0
+        _allowUIDisplay: 0
+        _displayInUI: 1
+        _displaySpace: 10
+        _screenPosition: 0
+        _objectPosition: 0
+        _priority: 10
+        _displayName:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _tooltip:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _primaryIcon:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _uiBackground:
+          _elementSprite: {fileID: 0}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _valueDisplayType: 10
+        _fillType: 0
+        _horizontalGaugeVisual:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _numberDisplay:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _numericalFormatting:
+          _minMaxFormatting: 0
+          _numberPrefix: 
+          _numberSuffix: 
+          _numberFormatType: 0
+          _timeFormatting: 40
+          _timeDisplayFrameRate: 0
+          _timeSeparatorType: 0
+          _thousandthPlaceSeparatorType: 0
+          _decimalPlaceSeparatorType: 0
+          _decimalOverrideType: 0
+          _customDecimalPlaces: 2
+        _pulseType: 0
+        _pulseStartValue: 0.25
+        _pulseFrequency: 0.5
+    - rid: 1597717103989752818
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717103989752820
+        - rid: 1597717103989752821
+        _result: 1
+        _muted: 0
+    - rid: 1597717103989752819
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717103989752822
+        - rid: 1597717103989752823
+        _result: 1
+        _muted: 0
+    - rid: 1597717103989752820
+      type: {class: OnStartInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnStart
+        _name: On Start
+        _category: General
+        _muted: 0
+    - rid: 1597717103989752821
+      type: {class: SetVariableOnTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ModifyValue
+        _name: Set Value On
+        _category: Variables
+        _muted: 0
+        _target: 30
+        _targetTag: Player
+        _bodyArray: 
+        _myVariable: Idle_Multiplier
+        _myNumber: 0
+        _myNumberName: 
+        _myString: 
+        _myStringName: 
+        _myBool: 0
+        _myBoolName: 
+        _myVector2: {x: 0, y: 0}
+        _myVector2Name: []
+        _myVector3: {x: 0, y: 0, z: 0}
+        _myVector3Name: []
+        _targetVariable: Multiplier
+        _includeAttached: 1
+        _includeAttachedName: 
+        _appendPlayerId: 0
+        _variableType: 0
+    - rid: 1597717103989752822
+      type: {class: OnStartInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnStart
+        _name: On Start
+        _category: General
+        _muted: 0
+    - rid: 1597717103989752823
+      type: {class: SetVariableOnTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ModifyValue
+        _name: Set Value On
+        _category: Variables
+        _muted: 0
+        _target: 30
+        _targetTag: Player
+        _bodyArray: 
+        _myVariable: Aggro_Multiplier
+        _myNumber: 0
+        _myNumberName: 
+        _myString: 
+        _myStringName: 
+        _myBool: 0
+        _myBoolName: 
+        _myVector2: {x: 0, y: 0}
+        _myVector2Name: []
+        _myVector3: {x: 0, y: 0, z: 0}
+        _myVector3Name: []
+        _targetVariable: Multiplier
+        _includeAttached: 1
+        _includeAttachedName: 
+        _appendPlayerId: 0
+        _variableType: 0
+    - rid: 1597717103989752824
+      type: {class: SetVariableOnTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ModifyValue
+        _name: Set Value On
+        _category: Variables
+        _muted: 0
+        _target: 30
+        _targetTag: Player
+        _bodyArray: 
+        _myVariable: Attack_Multiplier
+        _myNumber: 0
+        _myNumberName: 
+        _myString: 
+        _myStringName: 
+        _myBool: 0
+        _myBoolName: 
+        _myVector2: {x: 0, y: 0}
+        _myVector2Name: []
+        _myVector3: {x: 0, y: 0, z: 0}
+        _myVector3Name: []
+        _targetVariable: Multiplier
+        _includeAttached: 1
+        _includeAttachedName: 
+        _appendPlayerId: 0
+        _variableType: 0
+    - rid: 1597717108065566773
+      type: {class: MoveBackwardInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Move Backward
+        _name: "Move \u2199 Backward"
+        _category: Local Movement
+        _muted: 0
+        _distance: 1
+        _distanceValueName: 
+        _coordinatesName: []
+        _moveToCoordinates: {x: 0, y: 0, z: 0}
+        _movementPlane: 0
+        _mode: 1
+        _value: 0.75
+        _valueValueName: 
+        _easing: 1
+        _useStartDirection: 0
+    - rid: 1597717108065566774
+      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Idle_TurnAngle
+        _value: 1
+        _defaultValue: 1
+        _roundingType: 0
+        _minMaxType: 0
+        _min: 0
+        _max: 10
+        _returnRandomValueFromMinMax: 0
+        _allowUIDisplay: 0
+        _displayInUI: 1
+        _displaySpace: 10
+        _screenPosition: 0
+        _objectPosition: 0
+        _priority: 10
+        _displayName:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _tooltip:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _primaryIcon:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _uiBackground:
+          _elementSprite: {fileID: 0}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _valueDisplayType: 10
+        _fillType: 0
+        _horizontalGaugeVisual:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _numberDisplay:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _numericalFormatting:
+          _minMaxFormatting: 0
+          _numberPrefix: 
+          _numberSuffix: 
+          _numberFormatType: 0
+          _timeFormatting: 40
+          _timeDisplayFrameRate: 0
+          _timeSeparatorType: 0
+          _thousandthPlaceSeparatorType: 0
+          _decimalPlaceSeparatorType: 0
+          _decimalOverrideType: 0
+          _customDecimalPlaces: 2
+        _pulseType: 0
+        _pulseStartValue: 0.25
+        _pulseFrequency: 0.5
+    - rid: 1597717108065566775
+      type: {class: NumberModifyInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Modify Number
+        _name: Modify Number
+        _category: Numbers
+        _muted: 0
+        _setResultTo: 0
+        _numberName: Idle_TurnAngle
+        _amount: 1
+        _amountValueName: RNG_TurnAngle
+        _by: 2
+        _byValueName: 
+        _storeResultOn: 
+        _operation: 0
+    - rid: 1597717108065566860
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717108065566863
+        - rid: 1597717108065566864
+        - rid: 1597717108065566865
+        _result: 1
+        _muted: 0
+    - rid: 1597717108065566861
+      type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnHit
+        _name: On Touch
+        _category: Proximity
+        _muted: 0
+        _tag: Weapon
+    - rid: 1597717108065566862
+      type: {class: ChangeStateInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ChangeState
+        _name: Change State
+        _category: General
+        _muted: 0
+        _changeState: Defeated
+        _stateValueName: 
+    - rid: 1597717108065566863
+      type: {class: OnStartInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnStart
+        _name: On Start
+        _category: General
+        _muted: 0
+    - rid: 1597717108065566864
+      type: {class: ScaleLocalInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Scale To
+        _name: Scale To
+        _category: Scale
+        _muted: 0
+        _scale: {x: 0, y: 0, z: 0}
+        _scaleValueName: []
+        _mode: 1
+        _value: 0.5
+        _valueValueName: 
+        _easing: 2
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0
+    - rid: 1597717108065566865
+      type: {class: DisableInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Disable
+        _name: Disable
+        _category: Enable / Disable
+        _muted: 0
+    - rid: 1597717108065566866
+      type: {class: SpinRightInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Spin Right
+        _name: "Rotate \u2192 Turn Right"
+        _category: Rotation
+        _muted: 0
+        _angle: 360
+        _angleValueName: 
+        _mode: 0
+        _value: 1
+        _valueValueName: 
+        _easing: 1
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0
+    - rid: 1597717108065567092
+      type: {class: LogInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Log
+        _name: Log
+        _category: Adv Coding
+        _muted: 0
+        _message: On Far Triggered!
+        _messageValueName: 
+        _prefix: 'AA:'

@@ -1,0 +1,842 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
+  m_Name: XMP_Flerp_Root_Float
+  m_EditorClassIdentifier: 
+  _name: XMP_Flerp_Root_Float
+  _propertyType: 0
+  _loggingEnabled: 0
+  _legacyMonaPlatforms: 0
+  _sourceUrl: 
+  _defaultVariables:
+    rid: 1597717103989752813
+  _priority: 0
+  _corePage:
+    rid: 1597717103989752814
+  _statePages: []
+  _began: 0
+  _monaTags:
+  - Enemy
+  _monaAssets: []
+  _monaTagSource: {fileID: 11400000, guid: 7e6321709ba614d29b694b0d32b37a7a, type: 2}
+  _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1597717103989752813
+      type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _values:
+        - rid: 1597717103989752825
+        - rid: 1597717103989752826
+        - rid: 1597717103989752827
+        - rid: 1597717103989752828
+        - rid: 1597717108065566767
+    - rid: 1597717103989752814
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 1597717103989752829
+        - rid: 1597717103989752815
+        - rid: 1597717108065566768
+        _name: Core
+        _isCore: 1
+        _isActive: 0
+    - rid: 1597717103989752815
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717108065566769
+        - rid: 1597717103989752830
+        _result: 1
+        _muted: 0
+    - rid: 1597717103989752825
+      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Multiplier
+        _value: 1
+        _defaultValue: 1
+        _roundingType: 0
+        _minMaxType: 0
+        _min: 0
+        _max: 10
+        _returnRandomValueFromMinMax: 0
+        _allowUIDisplay: 0
+        _displayInUI: 1
+        _displaySpace: 10
+        _screenPosition: 0
+        _objectPosition: 0
+        _priority: 10
+        _displayName:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _tooltip:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _primaryIcon:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _uiBackground:
+          _elementSprite: {fileID: 0}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _valueDisplayType: 10
+        _fillType: 0
+        _horizontalGaugeVisual:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _numberDisplay:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _numericalFormatting:
+          _minMaxFormatting: 0
+          _numberPrefix: 
+          _numberSuffix: 
+          _numberFormatType: 0
+          _timeFormatting: 40
+          _timeDisplayFrameRate: 0
+          _timeSeparatorType: 0
+          _thousandthPlaceSeparatorType: 0
+          _decimalPlaceSeparatorType: 0
+          _decimalOverrideType: 0
+          _customDecimalPlaces: 2
+        _pulseType: 0
+        _pulseStartValue: 0.25
+        _pulseFrequency: 0.5
+    - rid: 1597717103989752826
+      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: CUR_Speed
+        _value: 1
+        _defaultValue: 1
+        _roundingType: 0
+        _minMaxType: 0
+        _min: 0
+        _max: 10
+        _returnRandomValueFromMinMax: 0
+        _allowUIDisplay: 0
+        _displayInUI: 1
+        _displaySpace: 10
+        _screenPosition: 0
+        _objectPosition: 0
+        _priority: 10
+        _displayName:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _tooltip:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _primaryIcon:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _uiBackground:
+          _elementSprite: {fileID: 0}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _valueDisplayType: 10
+        _fillType: 0
+        _horizontalGaugeVisual:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _numberDisplay:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _numericalFormatting:
+          _minMaxFormatting: 0
+          _numberPrefix: 
+          _numberSuffix: 
+          _numberFormatType: 0
+          _timeFormatting: 40
+          _timeDisplayFrameRate: 0
+          _timeSeparatorType: 0
+          _thousandthPlaceSeparatorType: 0
+          _decimalPlaceSeparatorType: 0
+          _decimalOverrideType: 0
+          _customDecimalPlaces: 2
+        _pulseType: 0
+        _pulseStartValue: 0.25
+        _pulseFrequency: 0.5
+    - rid: 1597717103989752827
+      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: DFT_Speed
+        _value: 1
+        _defaultValue: 1
+        _roundingType: 0
+        _minMaxType: 0
+        _min: 0
+        _max: 10
+        _returnRandomValueFromMinMax: 0
+        _allowUIDisplay: 0
+        _displayInUI: 1
+        _displaySpace: 10
+        _screenPosition: 0
+        _objectPosition: 0
+        _priority: 10
+        _displayName:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _tooltip:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _primaryIcon:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _uiBackground:
+          _elementSprite: {fileID: 0}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _valueDisplayType: 10
+        _fillType: 0
+        _horizontalGaugeVisual:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _numberDisplay:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _numericalFormatting:
+          _minMaxFormatting: 0
+          _numberPrefix: 
+          _numberSuffix: 
+          _numberFormatType: 0
+          _timeFormatting: 40
+          _timeDisplayFrameRate: 0
+          _timeSeparatorType: 0
+          _thousandthPlaceSeparatorType: 0
+          _decimalPlaceSeparatorType: 0
+          _decimalOverrideType: 0
+          _customDecimalPlaces: 2
+        _pulseType: 0
+        _pulseStartValue: 0.25
+        _pulseFrequency: 0.5
+    - rid: 1597717103989752828
+      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: MoveDistance
+        _value: 0.5
+        _defaultValue: 0.5
+        _roundingType: 0
+        _minMaxType: 0
+        _min: 0
+        _max: 10
+        _returnRandomValueFromMinMax: 0
+        _allowUIDisplay: 0
+        _displayInUI: 1
+        _displaySpace: 10
+        _screenPosition: 0
+        _objectPosition: 0
+        _priority: 10
+        _displayName:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _tooltip:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _primaryIcon:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _uiBackground:
+          _elementSprite: {fileID: 0}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _valueDisplayType: 10
+        _fillType: 0
+        _horizontalGaugeVisual:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _numberDisplay:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _numericalFormatting:
+          _minMaxFormatting: 0
+          _numberPrefix: 
+          _numberSuffix: 
+          _numberFormatType: 0
+          _timeFormatting: 40
+          _timeDisplayFrameRate: 0
+          _timeSeparatorType: 0
+          _thousandthPlaceSeparatorType: 0
+          _decimalPlaceSeparatorType: 0
+          _decimalOverrideType: 0
+          _customDecimalPlaces: 2
+        _pulseType: 0
+        _pulseStartValue: 0.25
+        _pulseFrequency: 0.5
+    - rid: 1597717103989752829
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717103989752831
+        - rid: 1597717108065566720
+        _result: 1
+        _muted: 0
+    - rid: 1597717103989752830
+      type: {class: NumberModifyInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Modify Number
+        _name: Modify Number
+        _category: Numbers
+        _muted: 0
+        _setResultTo: 10
+        _numberName: DFT_Speed
+        _amount: 1
+        _amountValueName: 
+        _by: 2
+        _byValueName: Multiplier
+        _storeResultOn: CUR_Speed
+        _operation: 3
+    - rid: 1597717103989752831
+      type: {class: MoveUpInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Move Up
+        _name: "Move \u2191 Up"
+        _category: Local Movement
+        _muted: 0
+        _distance: 1
+        _distanceValueName: MoveDistance
+        _coordinatesName: []
+        _moveToCoordinates: {x: 0, y: 0, z: 0}
+        _movementPlane: 0
+        _mode: 2
+        _value: 1
+        _valueValueName: CUR_Speed
+        _easing: 1
+        _useStartDirection: 0
+    - rid: 1597717108065566720
+      type: {class: MoveDownInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Move Down
+        _name: "Move \u2193 Down"
+        _category: Local Movement
+        _muted: 0
+        _distance: 1
+        _distanceValueName: MoveDistance
+        _coordinatesName: []
+        _moveToCoordinates: {x: 0, y: 0, z: 0}
+        _movementPlane: 0
+        _mode: 2
+        _value: 1
+        _valueValueName: CUR_Speed
+        _easing: 1
+        _useStartDirection: 0
+    - rid: 1597717108065566767
+      type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Multiplier_Limit
+        _value: 6
+        _defaultValue: 6
+        _roundingType: 0
+        _minMaxType: 0
+        _min: 0
+        _max: 10
+        _returnRandomValueFromMinMax: 0
+        _allowUIDisplay: 0
+        _displayInUI: 1
+        _displaySpace: 10
+        _screenPosition: 0
+        _objectPosition: 0
+        _priority: 10
+        _displayName:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _tooltip:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _primaryIcon:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _uiBackground:
+          _elementSprite: {fileID: 0}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _valueDisplayType: 10
+        _fillType: 0
+        _horizontalGaugeVisual:
+          _primarySprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _backgroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _foregroundSprite:
+            _elementSprite: {fileID: 0}
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+          _textDisplay:
+            _elementText: 
+            _fontType: 0
+            _elementFont: {fileID: 0}
+            _textAlignment: 0
+            _displayElement: 0
+            _elementType: 0
+            _elementColor: {r: 0, g: 0, b: 0, a: 0}
+            _shadowType: 0
+            _shadowOffset: {x: 0, y: 0}
+        _numberDisplay:
+          _elementText: 
+          _fontType: 0
+          _elementFont: {fileID: 0}
+          _textAlignment: 0
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
+          _shadowType: 0
+          _shadowOffset: {x: 0, y: 0}
+        _numericalFormatting:
+          _minMaxFormatting: 0
+          _numberPrefix: 
+          _numberSuffix: 
+          _numberFormatType: 0
+          _timeFormatting: 40
+          _timeDisplayFrameRate: 0
+          _timeSeparatorType: 0
+          _thousandthPlaceSeparatorType: 0
+          _decimalPlaceSeparatorType: 0
+          _decimalOverrideType: 0
+          _customDecimalPlaces: 2
+        _pulseType: 0
+        _pulseStartValue: 0.25
+        _pulseFrequency: 0.5
+    - rid: 1597717108065566768
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717108065566770
+        - rid: 1597717108065566771
+        _result: 1
+        _muted: 0
+    - rid: 1597717108065566769
+      type: {class: OnNumberLessThanInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnNumberLessThan
+        _name: Number < Less
+        _category: Numbers
+        _muted: 0
+        _valueName: Multiplier
+        _amount: 0
+        _amountValueName: Multiplier_Limit
+    - rid: 1597717108065566770
+      type: {class: OnNumberGreaterThanInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnNumberGreaterThan
+        _name: Number > Greater
+        _category: Numbers
+        _muted: 0
+        _valueName: Multiplier
+        _amount: 0
+        _amountValueName: Multiplier_Limit
+    - rid: 1597717108065566771
+      type: {class: NumberModifyInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Modify Number
+        _name: Modify Number
+        _category: Numbers
+        _muted: 0
+        _setResultTo: 0
+        _numberName: CUR_Speed
+        _amount: 0
+        _amountValueName: 
+        _by: 2
+        _byValueName: 
+        _storeResultOn: 
+        _operation: 0
