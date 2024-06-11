@@ -71,7 +71,7 @@ MonoBehaviour:
         _category: General
         _muted: 0
         _messageTarget: 0
-        _tag: Player
+        _tag: GameController
         _bodyArray: 
         _message: KeyCollected
         _messageName: 

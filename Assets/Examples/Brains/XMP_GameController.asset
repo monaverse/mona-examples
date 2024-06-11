@@ -53,7 +53,6 @@ MonoBehaviour:
         _instructionTiles:
         - rid: 1597717087361433834
         - rid: 1597717087361433835
-        - rid: 1597717087361434052
         _result: 1
         _muted: 0
     - rid: 1597717087361433831
@@ -384,11 +383,3 @@ MonoBehaviour:
         _byValueName: 
         _storeResultOn: 
         _operation: 1
-    - rid: 1597717087361434052
-      type: {class: DisableInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
-        asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: Disable
-        _name: Disable
-        _category: Enable / Disable
-        _muted: 0
