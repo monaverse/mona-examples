@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3207145446006946072}
   - component: {fileID: 228884068112589982}
+  - component: {fileID: 5772798256766491753}
   - component: {fileID: 6496642325259128354}
   - component: {fileID: 5140587021186283720}
   m_Layer: 0
-  m_Name: MovementRoot
+  m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,6 +59,33 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.8
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5772798256766491753
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54014083945559087}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &6496642325259128354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,6 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _brainGraphs:
   - {fileID: 11400000, guid: a849cd29b14624e25a62880fd69181a5, type: 2}
+  - {fileID: 11400000, guid: a2790975c96fa44b39905cbb42fddb3c, type: 2}
   _brainUrls: []
 --- !u!1 &2845344872673034939
 GameObject:
@@ -331,6 +360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _brainGraphs:
   - {fileID: 11400000, guid: 253e7bfa401624334a2ae7f94094de5a, type: 2}
+  - {fileID: 11400000, guid: 9f29e49f8487f4bbba34f4ecb27d214e, type: 2}
   _brainUrls: []
 --- !u!1 &4393631899474911888
 GameObject:
@@ -358,7 +388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4393631899474911888}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 2, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -401,6 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _brainGraphs:
   - {fileID: 0}
+  - {fileID: 11400000, guid: 01c0687523fdd4f2cab7d1e41c78a7b9, type: 2}
   _brainUrls: []
 --- !u!1 &5380765770135858449
 GameObject:
@@ -637,6 +668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _brainGraphs:
   - {fileID: 11400000, guid: 253e7bfa401624334a2ae7f94094de5a, type: 2}
+  - {fileID: 11400000, guid: 9f29e49f8487f4bbba34f4ecb27d214e, type: 2}
   _brainUrls: []
 --- !u!1 &8742515273903210948
 GameObject:

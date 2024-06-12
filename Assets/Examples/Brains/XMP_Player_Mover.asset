@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
-  m_Name: XMP_Player_Input
+  m_Name: XMP_Player_Mover
   m_EditorClassIdentifier: 
   _name: ex_CharacterController
   _propertyType: 0
@@ -57,6 +57,7 @@ MonoBehaviour:
       data:
         _instructionTiles:
         - rid: 1597717087361433812
+        - rid: 1597717108065567480
         - rid: 1597717087361433813
         _result: 1
         _muted: 0
@@ -809,3 +810,12 @@ MonoBehaviour:
       data:
         _name: ClickPosition
         _value: {x: 0, y: 0, z: 0}
+    - rid: 1597717108065567480
+      type: {class: OnKeyInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnKey
+        _name: On Key Press
+        _category: Input
+        _muted: 0
+        _key: 1
+        _inputState: 2

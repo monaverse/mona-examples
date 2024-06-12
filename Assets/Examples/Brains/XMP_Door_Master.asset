@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
-  m_Name: XMP_Collectible_Coin
+  m_Name: XMP_Door_Master
   m_EditorClassIdentifier: 
-  _name: EX_Coin
-  _propertyType: 0
+  _name: XMP_Door_Master
+  _propertyType: 1
   _loggingEnabled: 0
   _legacyMonaPlatforms: 0
   _sourceUrl: 
   _defaultVariables:
-    rid: 1597717087361433814
+    rid: 1597717108065567141
   _priority: 0
   _corePage:
-    rid: 1597717087361433815
+    rid: 1597717108065567142
   _statePages: []
   _began: 0
   _monaTags:
@@ -32,35 +32,41 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 1597717087361433814
+    - rid: 1597717108065567141
       type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
       data:
         _values:
-        - rid: 1597717087361433820
-    - rid: 1597717087361433815
+        - rid: 1597717108065567147
+        - rid: 1597717108065567148
+    - rid: 1597717108065567142
       type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructions:
-        - rid: 1597717087361433816
+        - rid: 1597717108065567143
+        - rid: 1597717108065567149
         _name: Core
         _isCore: 1
         _isActive: 0
-    - rid: 1597717087361433816
+    - rid: 1597717108065567143
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 1597717087361433821
-        - rid: 1597717087361433822
-        - rid: 1597717108065567346
-        - rid: 1597717087361433823
+        - rid: 1597717108065567150
+        - rid: 1597717108065567151
+        - rid: 1597717108065567152
         _result: 1
         _muted: 0
-    - rid: 1597717087361433820
+    - rid: 1597717108065567147
+      type: {class: MonaVariablesBool, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Unlocked
+        _value: 1
+    - rid: 1597717108065567148
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
-        _name: CoinValue
-        _value: 1
-        _defaultValue: 1
+        _name: OpenDistance
+        _value: 2
+        _defaultValue: 2
         _roundingType: 0
         _minMaxType: 0
         _min: 0
@@ -190,16 +196,40 @@ MonoBehaviour:
         _pulseType: 0
         _pulseStartValue: 0.25
         _pulseFrequency: 0.5
-    - rid: 1597717087361433821
-      type: {class: OnEnterInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+    - rid: 1597717108065567149
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717108065567153
+        - rid: 1597717108065567154
+        - rid: 1597717110223274051
+        _result: 1
+        _muted: 0
+    - rid: 1597717108065567150
+      type: {class: BoolValueInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
         asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: OnEnter
-        _name: On Enter
+        _id: BoolValue
+        _name: Bool = Equals
+        _category: Booleans
+        _muted: 0
+        _valueName: Unlocked
+        _operator: 0
+        _value: 1
+        _valueValueName: 
+    - rid: 1597717108065567151
+      type: {class: OnNearInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnNear
+        _name: When Near
         _category: Proximity
         _muted: 0
         _tag: Player
-    - rid: 1597717087361433822
+        _distance: 2
+        _distanceValueName: 
+        _fieldOfView: 180
+        _fieldOfViewValueName: 
+    - rid: 1597717108065567152
       type: {class: BroadcastMessageToTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Broadcasting,
         asm: com.monaverse.sdk.brains.runtime}
       data:
@@ -207,35 +237,54 @@ MonoBehaviour:
         _name: Send Message
         _category: General
         _muted: 0
-        _messageTarget: 0
-        _tag: GameController
+        _messageTarget: 30
+        _tag: Player
         _bodyArray: 
-        _message: CoinCollected
+        _message: Open
         _messageName: 
         _includeAttached: 0
         _includeAttachedName: 
         _appendPlayerId: 0
-    - rid: 1597717087361433823
-      type: {class: DisableInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+    - rid: 1597717108065567153
+      type: {class: OnFarInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnFar
+        _name: When Far
+        _category: Proximity
+        _muted: 0
+        _tag: Player
+        _distance: 4
+        _distanceValueName: 
+    - rid: 1597717108065567154
+      type: {class: BroadcastMessageToTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Broadcasting,
         asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: Disable
-        _name: Disable
-        _category: Enable / Disable
+        _id: BroadcastMessage
+        _name: Send Message
+        _category: General
         _muted: 0
-    - rid: 1597717108065567346
-      type: {class: ScaleLocalInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        _messageTarget: 30
+        _tag: Player
+        _bodyArray: 
+        _message: Close
+        _messageName: 
+        _includeAttached: 0
+        _includeAttachedName: 
+        _appendPlayerId: 0
+    - rid: 1597717110223274051
+      type: {class: ChangeBrainInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
         asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: Scale To
-        _name: Scale To
-        _category: Scale
+        _id: ChangeMesh
+        _name: Add / Remove Brains
+        _category: General
         _muted: 0
-        _scale: {x: 0, y: 0, z: 0}
-        _scaleValueName: []
-        _mode: 1
-        _value: 0.25
-        _valueValueName: 
-        _easing: 1
-        _onlyTurnWhenMoving: 0
-        _lookStraightAhead: 0
+        _mainAction: 0
+        _target: 35
+        _targetTag: 
+        _brainsToAdd: 0
+        _brainsToRemove: 0
+        _brainString: 
+        _brainStringName: 
+        _includeAttached: 0
+        _includeChildren: 0

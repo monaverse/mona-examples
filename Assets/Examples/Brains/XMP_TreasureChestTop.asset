@@ -36,6 +36,7 @@ MonoBehaviour:
       type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
       data:
         _values:
+        - rid: 1597717108065567473
         - rid: 1597717087361433771
     - rid: 1597717087361433769
       type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
@@ -50,8 +51,9 @@ MonoBehaviour:
       data:
         _instructionTiles:
         - rid: 1597717087361433772
+        - rid: 1597717108065567474
         - rid: 1597717087361433773
-        - rid: 1597717087361433810
+        - rid: 1597717108065567469
         - rid: 1597717087361433775
         - rid: 1597717087361433776
         _result: 1
@@ -81,7 +83,7 @@ MonoBehaviour:
         _category: Proximity
         _muted: 0
         _tag: Player
-        _distance: 2.5
+        _distance: 1
         _distanceValueName: 
         _fieldOfView: 180
         _fieldOfViewValueName: 
@@ -112,11 +114,29 @@ MonoBehaviour:
         _easing: 1
         _onlyTurnWhenMoving: 0
         _lookStraightAhead: 0
-    - rid: 1597717087361433810
-      type: {class: OnInteractInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
-        asm: com.monaverse.sdk.brains.runtime}
+    - rid: 1597717108065567469
+      type: {class: OnKeyInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: OnInteract
-        _name: On Interact
+        _id: OnKey
+        _name: On Key Press
         _category: Input
         _muted: 0
+        _key: 19
+        _inputState: 2
+    - rid: 1597717108065567473
+      type: {class: MonaVariablesBool, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Unlocked
+        _value: 1
+    - rid: 1597717108065567474
+      type: {class: BoolValueInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: BoolValue
+        _name: Bool = Equals
+        _category: Booleans
+        _muted: 0
+        _valueName: Unlocked
+        _operator: 0
+        _value: 1
+        _valueValueName: 

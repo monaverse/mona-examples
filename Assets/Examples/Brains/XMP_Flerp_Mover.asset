@@ -52,6 +52,7 @@ MonoBehaviour:
         - rid: 1597717103989752727
         - rid: 1597717103989752723
         - rid: 1597717103989752817
+        - rid: 1597717108065567138
     - rid: 1597717103989752328
       type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
@@ -64,7 +65,9 @@ MonoBehaviour:
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 1597717108065566861
+        - rid: 1597717110223274003
+        - rid: 1597717108065567139
+        - rid: 1597717108065567140
         - rid: 1597717108065566862
         _result: 1
         _muted: 0
@@ -105,6 +108,7 @@ MonoBehaviour:
         _instructions:
         - rid: 1597717108065566860
         - rid: 1597717103989752338
+        - rid: 1597717110223274030
         _name: Defeated
         _isCore: 0
         _isActive: 0
@@ -112,8 +116,8 @@ MonoBehaviour:
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
         _name: RNG_TurnAngle
-        _value: 180.16675
-        _defaultValue: 180.16675
+        _value: -164.59644
+        _defaultValue: -164.59644
         _roundingType: 0
         _minMaxType: 10
         _min: -360
@@ -263,15 +267,16 @@ MonoBehaviour:
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 1597717108065566866
+        - rid: 1597717110223274032
+        - rid: 1597717110223274029
         _result: 1
         _muted: 0
     - rid: 1597717103989752340
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
         _name: Idle_Wait
-        _value: 1.2517813
-        _defaultValue: 1.2517813
+        _value: 1.3042372
+        _defaultValue: 1.3042372
         _roundingType: 0
         _minMaxType: 10
         _min: 0.5
@@ -787,7 +792,7 @@ MonoBehaviour:
         _muted: 0
         _tag: Player
         _distance: 6
-        _distanceValueName: 
+        _distanceValueName: Idle_TurnAngle
     - rid: 1597717103989752566
       type: {class: ChangeStateInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
         asm: com.monaverse.sdk.brains.runtime}
@@ -962,8 +967,8 @@ MonoBehaviour:
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
         _name: Aggro_Distance
-        _value: 2.5
-        _defaultValue: 2.5
+        _value: 4
+        _defaultValue: 4
         _roundingType: 0
         _minMaxType: 0
         _min: 0
@@ -2127,14 +2132,6 @@ MonoBehaviour:
         - rid: 1597717108065566865
         _result: 1
         _muted: 0
-    - rid: 1597717108065566861
-      type: {class: OnHitInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: OnHit
-        _name: On Touch
-        _category: Proximity
-        _muted: 0
-        _tag: Weapon
     - rid: 1597717108065566862
       type: {class: ChangeStateInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
         asm: com.monaverse.sdk.brains.runtime}
@@ -2164,7 +2161,7 @@ MonoBehaviour:
         _scale: {x: 0, y: 0, z: 0}
         _scaleValueName: []
         _mode: 1
-        _value: 0.5
+        _value: 0.2
         _valueValueName: 
         _easing: 2
         _onlyTurnWhenMoving: 0
@@ -2177,22 +2174,6 @@ MonoBehaviour:
         _name: Disable
         _category: Enable / Disable
         _muted: 0
-    - rid: 1597717108065566866
-      type: {class: SpinRightInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
-        asm: com.monaverse.sdk.brains.runtime}
-      data:
-        _id: Spin Right
-        _name: "Rotate \u2192 Turn Right"
-        _category: Rotation
-        _muted: 0
-        _angle: 360
-        _angleValueName: 
-        _mode: 0
-        _value: 1
-        _valueValueName: 
-        _easing: 1
-        _onlyTurnWhenMoving: 0
-        _lookStraightAhead: 0
     - rid: 1597717108065567092
       type: {class: LogInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
         asm: com.monaverse.sdk.brains.runtime}
@@ -2204,3 +2185,98 @@ MonoBehaviour:
         _message: On Far Triggered!
         _messageValueName: 
         _prefix: 'AA:'
+    - rid: 1597717108065567138
+      type: {class: MonaVariablesBool, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: IsDefeated
+        _value: 0
+    - rid: 1597717108065567139
+      type: {class: BoolValueInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: BoolValue
+        _name: Bool = Equals
+        _category: Booleans
+        _muted: 0
+        _valueName: IsDefeated
+        _operator: 0
+        _value: 0
+        _valueValueName: 
+    - rid: 1597717108065567140
+      type: {class: ChangeBoolValueInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ChangeBoolValue
+        _name: Set Bool Value
+        _category: Booleans
+        _muted: 0
+        _valueName: IsDefeated
+        _value: 1
+        _valueValueName: 
+    - rid: 1597717110223274003
+      type: {class: OnMessageInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnMessage
+        _name: On Message
+        _category: General
+        _muted: 0
+        _message: Hit
+    - rid: 1597717110223274029
+      type: {class: SpinUpInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Spin Up
+        _name: "Rotate \u2191 Pitch Up"
+        _category: Rotation
+        _muted: 0
+        _angle: 180
+        _angleValueName: 
+        _mode: 1
+        _value: 0.2
+        _valueValueName: 
+        _easing: 2
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0
+    - rid: 1597717110223274030
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717110223274033
+        - rid: 1597717110223274031
+        _result: 1
+        _muted: 0
+    - rid: 1597717110223274031
+      type: {class: MoveUpInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Move Up
+        _name: "Move \u2191 Up"
+        _category: Local Movement
+        _muted: 0
+        _distance: 2
+        _distanceValueName: 
+        _coordinatesName: []
+        _moveToCoordinates: {x: 0, y: 0, z: 0}
+        _movementPlane: 0
+        _mode: 2
+        _value: 0.2
+        _valueValueName: 
+        _easing: 2
+        _useStartDirection: 0
+    - rid: 1597717110223274032
+      type: {class: OnStartInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnStart
+        _name: On Start
+        _category: General
+        _muted: 0
+    - rid: 1597717110223274033
+      type: {class: OnStartInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnStart
+        _name: On Start
+        _category: General
+        _muted: 0

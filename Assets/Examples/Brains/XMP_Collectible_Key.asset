@@ -50,6 +50,7 @@ MonoBehaviour:
         _instructionTiles:
         - rid: 1597717087361433828
         - rid: 1597717087361433829
+        - rid: 1597717108065567345
         - rid: 1597717087361433830
         _result: 1
         _muted: 0
@@ -86,3 +87,19 @@ MonoBehaviour:
         _name: Disable
         _category: Enable / Disable
         _muted: 0
+    - rid: 1597717108065567345
+      type: {class: ScaleLocalInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Scale To
+        _name: Scale To
+        _category: Scale
+        _muted: 0
+        _scale: {x: 0, y: 0, z: 0}
+        _scaleValueName: []
+        _mode: 1
+        _value: 0.25
+        _valueValueName: 
+        _easing: 1
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0

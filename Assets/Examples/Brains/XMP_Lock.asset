@@ -10,58 +10,65 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
-  m_Name: XMP_GameController
+  m_Name: XMP_Lock
   m_EditorClassIdentifier: 
-  _name: XMP_GameController
+  _name: XMP_Door_Lock
   _propertyType: 0
   _loggingEnabled: 0
   _legacyMonaPlatforms: 0
   _sourceUrl: 
   _defaultVariables:
-    rid: 1597717087361433824
+    rid: 1597717108065567227
   _priority: 0
   _corePage:
-    rid: 1597717087361433825
+    rid: 1597717108065567228
   _statePages: []
   _began: 0
   _monaTags:
-  - GameController
+  - Default
   _monaAssets: []
   _monaTagSource: {fileID: 11400000, guid: 7e6321709ba614d29b694b0d32b37a7a, type: 2}
   _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
   references:
     version: 2
     RefIds:
-    - rid: 1597717087361433824
+    - rid: 1597717108065567227
       type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
       data:
         _values:
-        - rid: 1597717087361433831
-        - rid: 1597717087361433832
-    - rid: 1597717087361433825
+        - rid: 1597717108065567230
+        - rid: 1597717108065567231
+        - rid: 1597717108065567232
+    - rid: 1597717108065567228
       type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructions:
-        - rid: 1597717087361433826
-        - rid: 1597717087361433833
-        - rid: 1597717108065567413
+        - rid: 1597717108065567229
+        - rid: 1597717108065567242
+        - rid: 1597717108065567233
         _name: Core
         _isCore: 1
         _isActive: 0
-    - rid: 1597717087361433826
+    - rid: 1597717108065567229
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 1597717087361433834
-        - rid: 1597717087361433835
+        - rid: 1597717108065567234
+        - rid: 1597717108065567282
+        - rid: 1597717108065567235
         _result: 1
         _muted: 0
-    - rid: 1597717087361433831
+    - rid: 1597717108065567230
+      type: {class: MonaVariablesBool, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
+      data:
+        _name: Unlocked
+        _value: 0
+    - rid: 1597717108065567231
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
-        _name: Coins
-        _value: 0
-        _defaultValue: 0
+        _name: OpenDistance
+        _value: 2
+        _defaultValue: 2
         _roundingType: 0
         _minMaxType: 0
         _min: 0
@@ -69,7 +76,7 @@ MonoBehaviour:
         _returnRandomValueFromMinMax: 0
         _allowUIDisplay: 0
         _displayInUI: 1
-        _displaySpace: 0
+        _displaySpace: 10
         _screenPosition: 0
         _objectPosition: 0
         _priority: 10
@@ -127,9 +134,9 @@ MonoBehaviour:
             _shadowOffset: {x: 0, y: 0}
         _uiBackground:
           _elementSprite: {fileID: 0}
-          _displayElement: 1
-          _elementType: 20
-          _elementColor: {r: 0, g: 0, b: 0, a: 0.50980395}
+          _displayElement: 0
+          _elementType: 0
+          _elementColor: {r: 0, g: 0, b: 0, a: 0}
           _shadowType: 0
           _shadowOffset: {x: 0, y: 0}
         _valueDisplayType: 10
@@ -167,11 +174,11 @@ MonoBehaviour:
             _shadowType: 0
             _shadowOffset: {x: 0, y: 0}
         _numberDisplay:
-          _elementText: Coins
+          _elementText: 
           _fontType: 0
           _elementFont: {fileID: 0}
           _textAlignment: 0
-          _displayElement: 1
+          _displayElement: 0
           _elementType: 0
           _elementColor: {r: 0, g: 0, b: 0, a: 0}
           _shadowType: 0
@@ -191,10 +198,10 @@ MonoBehaviour:
         _pulseType: 0
         _pulseStartValue: 0.25
         _pulseFrequency: 0.5
-    - rid: 1597717087361433832
+    - rid: 1597717108065567232
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
-        _name: Keys
+        _name: PlayerKeys
         _value: 0
         _defaultValue: 0
         _roundingType: 0
@@ -326,94 +333,224 @@ MonoBehaviour:
         _pulseType: 0
         _pulseStartValue: 0.25
         _pulseFrequency: 0.5
-    - rid: 1597717087361433833
+    - rid: 1597717108065567233
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 1597717087361433836
-        - rid: 1597717087361433837
+        - rid: 1597717108065567246
+        - rid: 1597717108065567238
+        - rid: 1597717108065567412
+        - rid: 1597717108065567379
+        - rid: 1597717108065567240
+        - rid: 1597717108065567239
+        - rid: 1597717108065567241
         _result: 1
         _muted: 0
-    - rid: 1597717087361433834
-      type: {class: OnMessageInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+    - rid: 1597717108065567234
+      type: {class: OnStartInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
         asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: OnMessage
-        _name: On Message
+        _id: OnStart
+        _name: On Start
         _category: General
         _muted: 0
-        _message: CoinCollected
-    - rid: 1597717087361433835
-      type: {class: NumberModifyInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+    - rid: 1597717108065567235
+      type: {class: SetVariableOnTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
         asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: Modify Number
-        _name: Modify Number
-        _category: Numbers
+        _id: ModifyValue
+        _name: Set Value On
+        _category: Variables
         _muted: 0
-        _setResultTo: 0
-        _numberName: Coins
-        _amount: 1
-        _amountValueName: 
-        _by: 2
-        _byValueName: 
-        _storeResultOn: 
-        _operation: 1
-    - rid: 1597717087361433836
-      type: {class: OnMessageInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        _target: 10
+        _targetTag: Player
+        _bodyArray: 
+        _myVariable: Unlocked
+        _myNumber: 0
+        _myNumberName: 
+        _myString: 
+        _myStringName: 
+        _myBool: 0
+        _myBoolName: 
+        _myVector2: {x: 0, y: 0}
+        _myVector2Name: []
+        _myVector3: {x: 0, y: 0, z: 0}
+        _myVector3Name: []
+        _targetVariable: Unlocked
+        _includeAttached: 1
+        _includeAttachedName: 
+        _appendPlayerId: 0
+        _variableType: 0
+    - rid: 1597717108065567238
+      type: {class: ChangeBoolValueInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
         asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: OnMessage
-        _name: On Message
-        _category: General
+        _id: ChangeBoolValue
+        _name: Set Bool Value
+        _category: Booleans
         _muted: 0
-        _message: KeyCollected
-    - rid: 1597717087361433837
-      type: {class: NumberModifyInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        _valueName: Unlocked
+        _value: 1
+        _valueValueName: 
+    - rid: 1597717108065567239
+      type: {class: SetVariableOnTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
         asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: Modify Number
-        _name: Modify Number
-        _category: Numbers
+        _id: ModifyValue
+        _name: Set Value On
+        _category: Variables
         _muted: 0
-        _setResultTo: 0
-        _numberName: Keys
-        _amount: 1
-        _amountValueName: 
-        _by: 2
-        _byValueName: 
-        _storeResultOn: 
-        _operation: 1
-    - rid: 1597717108065567413
+        _target: 10
+        _targetTag: Player
+        _bodyArray: 
+        _myVariable: Unlocked
+        _myNumber: 0
+        _myNumberName: 
+        _myString: 
+        _myStringName: 
+        _myBool: 0
+        _myBoolName: 
+        _myVector2: {x: 0, y: 0}
+        _myVector2Name: []
+        _myVector3: {x: 0, y: 0, z: 0}
+        _myVector3Name: []
+        _targetVariable: Unlocked
+        _includeAttached: 1
+        _includeAttachedName: 
+        _appendPlayerId: 0
+        _variableType: 0
+    - rid: 1597717108065567240
+      type: {class: ScaleLocalInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Scale To
+        _name: Scale To
+        _category: Scale
+        _muted: 0
+        _scale: {x: 0, y: 0, z: 0}
+        _scaleValueName: []
+        _mode: 1
+        _value: 0.1
+        _valueValueName: 
+        _easing: 2
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0
+    - rid: 1597717108065567241
+      type: {class: DisableInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Disable
+        _name: Disable
+        _category: Enable / Disable
+        _muted: 0
+    - rid: 1597717108065567242
       type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
       data:
         _instructionTiles:
-        - rid: 1597717108065567414
-        - rid: 1597717108065567415
+        - rid: 1597717108065567243
+        - rid: 1597717108065567244
+        - rid: 1597717108065567470
+        - rid: 1597717108065567245
         _result: 1
         _muted: 0
-    - rid: 1597717108065567414
-      type: {class: OnMessageInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+    - rid: 1597717108065567243
+      type: {class: BoolValueInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
         asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: OnMessage
-        _name: On Message
+        _id: BoolValue
+        _name: Bool = Equals
+        _category: Booleans
+        _muted: 0
+        _valueName: Unlocked
+        _operator: 0
+        _value: 0
+        _valueValueName: 
+    - rid: 1597717108065567244
+      type: {class: OnNearInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnNear
+        _name: When Near
+        _category: Proximity
+        _muted: 0
+        _tag: Player
+        _distance: 2
+        _distanceValueName: OpenDistance
+        _fieldOfView: 180
+        _fieldOfViewValueName: 
+    - rid: 1597717108065567245
+      type: {class: GetVariableOnTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: GetValue
+        _name: Get Value On
+        _category: Variables
+        _muted: 0
+        _target: 0
+        _targetTag: GameController
+        _targetVariable: Keys
+        _storeResultOn: PlayerKeys
+        _includeAttached: 1
+        _includeAttachedName: 
+        _appendPlayerId: 0
+    - rid: 1597717108065567246
+      type: {class: OnNumberGreaterThanInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnNumberGreaterThan
+        _name: Number > Greater
+        _category: Numbers
+        _muted: 0
+        _valueName: PlayerKeys
+        _amount: 0
+        _amountValueName: 
+    - rid: 1597717108065567282
+      type: {class: WaitInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Timing,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Wait
+        _name: Wait
         _category: General
         _muted: 0
+        _seconds: 0.1
+        _secondsValueName: 
+    - rid: 1597717108065567379
+      type: {class: ScaleLocalInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: Scale To
+        _name: Scale To
+        _category: Scale
+        _muted: 0
+        _scale: {x: 1.1, y: 1.1, z: 1.1}
+        _scaleValueName: []
+        _mode: 1
+        _value: 0.1
+        _valueValueName: 
+        _easing: 1
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 0
+    - rid: 1597717108065567412
+      type: {class: BroadcastMessageToTypeInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Broadcasting,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: BroadcastMessage
+        _name: Send Message
+        _category: General
+        _muted: 0
+        _messageTarget: 0
+        _tag: GameController
+        _bodyArray: 
         _message: SpendKey
-    - rid: 1597717108065567415
-      type: {class: NumberModifyInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Variables,
-        asm: com.monaverse.sdk.brains.runtime}
+        _messageName: 
+        _includeAttached: 0
+        _includeAttachedName: 
+        _appendPlayerId: 0
+    - rid: 1597717108065567470
+      type: {class: OnKeyInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
       data:
-        _id: Modify Number
-        _name: Modify Number
-        _category: Numbers
+        _id: OnKey
+        _name: On Key Press
+        _category: Input
         _muted: 0
-        _setResultTo: 0
-        _numberName: Keys
-        _amount: 1
-        _amountValueName: 
-        _by: 2
-        _byValueName: 
-        _storeResultOn: 
-        _operation: 2
+        _key: 19
+        _inputState: 2
