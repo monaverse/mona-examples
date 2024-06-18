@@ -248,6 +248,7 @@ MonoBehaviour:
     serializedGuid: 40bda06a-30fd-4883-952a-a04de0ae23ca
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Weapon
 --- !u!1 &42495766
@@ -305,6 +306,7 @@ MonoBehaviour:
     serializedGuid: 94da1c8f-25ec-4775-9865-2e8fcedeff14
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!1 &64420564 stripped
 GameObject:
@@ -324,8 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1512b289a0f3cbf418170ab9e9dcec5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brainGraphs:
-  - {fileID: 11400000, guid: 8f8b470f744c14160a48eda17f6bbfc7, type: 2}
+  _brainGraphs: []
   _brainUrls: []
 --- !u!114 &64420570
 MonoBehaviour:
@@ -347,6 +348,7 @@ MonoBehaviour:
     serializedGuid: 45cde85e-5539-4b49-9a9d-88c0c025343b
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!4 &69730957 stripped
 Transform:
@@ -577,6 +579,7 @@ MonoBehaviour:
     serializedGuid: f72a04d2-8f84-4a71-aede-598d1e1f75f2
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!65 &180791566
 BoxCollider:
@@ -841,6 +844,7 @@ MonoBehaviour:
     serializedGuid: 648ae0d5-df35-4cdf-b6c7-cede474c0d3f
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!4 &388551033 stripped
 Transform:
@@ -960,6 +964,7 @@ MonoBehaviour:
     serializedGuid: 154740e4-c47d-40c2-9777-6604f5e75fe6
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1001 &536057620
@@ -1101,6 +1106,7 @@ MonoBehaviour:
     serializedGuid: f72a04d2-8f84-4a71-aede-598d1e1f75f2
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!65 &553436808
 BoxCollider:
@@ -1205,6 +1211,7 @@ MonoBehaviour:
     serializedGuid: 4279fa98-7991-4b52-ab1d-eb494ee3e136
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1001 &554551889
@@ -1346,6 +1353,7 @@ MonoBehaviour:
     serializedGuid: 648ae0d5-df35-4cdf-b6c7-cede474c0d3f
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!64 &581727539
 MeshCollider:
@@ -1814,6 +1822,7 @@ MonoBehaviour:
     serializedGuid: 77cffa6d-5908-4436-9a6f-d60dde3a2a56
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1 &652516884 stripped
@@ -1857,6 +1866,7 @@ MonoBehaviour:
     serializedGuid: 648ae0d5-df35-4cdf-b6c7-cede474c0d3f
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!4 &698514645 stripped
 Transform:
@@ -1878,7 +1888,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _brainGraphs:
   - {fileID: 11400000, guid: 9d44508d58486406984464b0edefbcc0, type: 2}
-  - {fileID: 11400000, guid: 996717c03405045f993c37c926441a04, type: 2}
   _brainUrls: []
 --- !u!114 &703927106
 MonoBehaviour:
@@ -1900,6 +1909,7 @@ MonoBehaviour:
     serializedGuid: 3764e68f-eb83-4ef2-a09c-5aab35027d6b
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!1 &715431254
 GameObject:
@@ -2179,6 +2189,7 @@ MonoBehaviour:
     serializedGuid: 853f01be-81c9-489c-9e51-7f7f2f05e540
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!114 &734007145
@@ -2201,6 +2212,7 @@ MonoBehaviour:
     serializedGuid: 6738244a-1c49-471d-9d6a-c5f65466a750
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Weapon
 --- !u!4 &738508458 stripped
@@ -2269,6 +2281,7 @@ MonoBehaviour:
     serializedGuid: dbae9172-00c1-4918-98ee-ba0c3df72a3e
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Weapon
 --- !u!1001 &829989827
@@ -2367,6 +2380,7 @@ MonoBehaviour:
     serializedGuid: f3efc944-a2d4-471e-84a1-931e8a1a24d7
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Weapon
 --- !u!1001 &844315149
@@ -2868,6 +2882,7 @@ MonoBehaviour:
     serializedGuid: 648ae0d5-df35-4cdf-b6c7-cede474c0d3f
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!64 &1073602046
 MeshCollider:
@@ -3012,6 +3027,7 @@ MonoBehaviour:
     serializedGuid: 648ae0d5-df35-4cdf-b6c7-cede474c0d3f
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!64 &1086136310
 MeshCollider:
@@ -3120,6 +3136,7 @@ MonoBehaviour:
     serializedGuid: f72a04d2-8f84-4a71-aede-598d1e1f75f2
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!1001 &1099678057
 PrefabInstance:
@@ -3452,6 +3469,7 @@ MonoBehaviour:
     serializedGuid: 602a7422-c83a-4a51-9269-0d1f72ba4cb7
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!4 &1189477142 stripped
@@ -3587,6 +3605,7 @@ MonoBehaviour:
     serializedGuid: 0851a362-4327-43f2-99d1-9a172ec1ac3c
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!4 &1279827684
 Transform:
@@ -3724,6 +3743,7 @@ MonoBehaviour:
     serializedGuid: 0851a362-4327-43f2-99d1-9a172ec1ac3c
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!1 &1326067756 stripped
 GameObject:
@@ -3757,6 +3777,7 @@ MonoBehaviour:
     serializedGuid: 4555e54c-57de-4211-b71c-30e244dac8ac
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1 &1340904518 stripped
@@ -3785,6 +3806,7 @@ MonoBehaviour:
     serializedGuid: 0dcc3175-0e10-4da8-8b42-5694e7f2d8d7
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1 &1359411832 stripped
@@ -3819,6 +3841,7 @@ MonoBehaviour:
     serializedGuid: 47f3a540-c2a4-4152-b747-3ab3d9ef76eb
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!54 &1399256729
@@ -3954,6 +3977,7 @@ MonoBehaviour:
     serializedGuid: 19b3bc1d-46e0-42f8-b516-c6776043893f
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!114 &1478295973
@@ -3976,6 +4000,7 @@ MonoBehaviour:
     serializedGuid: b7c397c3-42f5-4447-a5e6-b5159efa935f
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Weapon
 --- !u!1 &1498604931 stripped
@@ -4004,6 +4029,7 @@ MonoBehaviour:
     serializedGuid: 6ae13b63-abd3-41c4-8d04-0b4c30c69289
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1 &1650893102
@@ -4072,6 +4098,7 @@ MonoBehaviour:
     serializedGuid: 33ca26dd-83d4-4ebf-b0f7-78fe212e23a1
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!114 &1706032702
@@ -4094,6 +4121,7 @@ MonoBehaviour:
     serializedGuid: d0634e42-ae8d-4254-aba7-5feefc34623d
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Weapon
 --- !u!1 &1723691228 stripped
@@ -4128,6 +4156,7 @@ MonoBehaviour:
     serializedGuid: 1297dcb0-0193-4890-bc71-f8ee66e8f582
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1 &1755835008
@@ -4183,6 +4212,7 @@ MonoBehaviour:
     serializedGuid: 9e7e6c41-5215-4664-af3c-4a23f7f1ea99
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!4 &1755835011
 Transform:
@@ -4351,8 +4381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1512b289a0f3cbf418170ab9e9dcec5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brainGraphs:
-  - {fileID: 11400000, guid: 3dd61b99c513f49b8bc716e83a2409e6, type: 2}
+  _brainGraphs: []
   _brainUrls: []
 --- !u!114 &1882504961
 MonoBehaviour:
@@ -4374,6 +4403,7 @@ MonoBehaviour:
     serializedGuid: 158ff4a7-4f84-4131-b883-c749ce637358
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!1 &1890939860
 GameObject:
@@ -4430,6 +4460,7 @@ MonoBehaviour:
     serializedGuid: e7c2f495-86fa-406d-a1ca-fb43fc217134
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!1 &1916212299 stripped
 GameObject:
@@ -4457,6 +4488,7 @@ MonoBehaviour:
     serializedGuid: 8887eeb2-5f73-42db-a6c2-77407105ad46
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1 &1936686733
@@ -4530,6 +4562,7 @@ MonoBehaviour:
     serializedGuid: 648ae0d5-df35-4cdf-b6c7-cede474c0d3f
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!64 &1936686737
 MeshCollider:
@@ -4701,6 +4734,7 @@ MonoBehaviour:
     serializedGuid: 4db649b9-c392-464c-9c8e-914ceedb29c7
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1 &1973168956
@@ -4827,8 +4861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _brainGraphs:
-  - {fileID: 11400000, guid: 6d4e5c102522c4a0fb21d6fde7a5f625, type: 2}
   - {fileID: 11400000, guid: 15908e7baec464d1fb4e831d26abf781, type: 2}
+  - {fileID: 11400000, guid: 7e2653459acdb4494b3523f4be066c87, type: 2}
   _brainUrls: []
 --- !u!114 &1973168962
 MonoBehaviour:
@@ -4850,6 +4884,7 @@ MonoBehaviour:
     serializedGuid: 93d7be83-1327-4e04-b2dc-544fa1d27e38
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!1 &1999150719 stripped
 GameObject:
@@ -4883,6 +4918,7 @@ MonoBehaviour:
     serializedGuid: 6e2632f1-8c9c-4530-941d-99b3c5ba8a98
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!1001 &2026433504
@@ -5082,6 +5118,7 @@ MonoBehaviour:
     serializedGuid: 0851a362-4327-43f2-99d1-9a172ec1ac3c
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!4 &2060530409
 Transform:
@@ -5199,6 +5236,7 @@ MonoBehaviour:
     serializedGuid: 03258711-48a1-4dbb-8ee0-b6f94a74d7b8
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags:
   - Ground
 --- !u!4 &2092232449 stripped
@@ -5221,7 +5259,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _brainGraphs:
   - {fileID: 11400000, guid: 9d44508d58486406984464b0edefbcc0, type: 2}
-  - {fileID: 11400000, guid: dbe190259188040289aca99f58df5943, type: 2}
   _brainUrls: []
 --- !u!114 &2137652436
 MonoBehaviour:
@@ -5243,6 +5280,7 @@ MonoBehaviour:
     serializedGuid: 4d5ab06e-69d9-4c7b-86c5-165e778336ef
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!64 &113069974777420708
 MeshCollider:
@@ -6658,8 +6696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1512b289a0f3cbf418170ab9e9dcec5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _brainGraphs:
-  - {fileID: 11400000, guid: 3dd61b99c513f49b8bc716e83a2409e6, type: 2}
+  _brainGraphs: []
   _brainUrls: []
 --- !u!114 &5425372375788349447
 MonoBehaviour:
@@ -6681,6 +6718,7 @@ MonoBehaviour:
     serializedGuid: 4cd9af70-94f4-440d-bf20-5467f5875bc7
   _syncType: 1
   SyncPositionAndRotation: 1
+  _disableOnLoad: 0
   _monaTags: []
 --- !u!136 &5562638136185182274
 CapsuleCollider:

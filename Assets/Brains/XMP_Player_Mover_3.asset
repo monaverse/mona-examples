@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec73015eeda9a7746a62d47a48b18696, type: 3}
+  m_Name: XMP_Player_Mover_3
+  m_EditorClassIdentifier: 
+  _name: XMP_Player_Mover_3
+  _propertyType: 0
+  _loggingEnabled: 0
+  _legacyMonaPlatforms: 0
+  _sourceUrl: 
+  _defaultVariables:
+    rid: 1597717202956713984
+  _priority: 0
+  _corePage:
+    rid: 1597717202956713985
+  _statePages:
+  - rid: 1597717202956713987
+  - rid: 1597717202956713998
+  _began: 0
+  _monaTags:
+  - Default
+  _monaAssets: []
+  _monaTagSource: {fileID: 11400000, guid: 7e6321709ba614d29b694b0d32b37a7a, type: 2}
+  _tileSet: {fileID: 11400000, guid: 97227b7a45df9364ebab91259570e7ed, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 1597717202956713984
+      type: {class: MonaBrainVariables, ns: Mona.SDK.Brains.Core.State, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _values: []
+    - rid: 1597717202956713985
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 1597717202956713986
+        - rid: 1597717202956713999
+        - rid: 1597717202956714000
+        _name: Core
+        _isCore: 1
+        _isActive: 0
+    - rid: 1597717202956713986
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717202956713995
+        - rid: 1597717202956713996
+        _result: 1
+        _muted: 0
+    - rid: 1597717202956713987
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 1597717202956713988
+        - rid: 1597717202956713991
+        _name: Type1
+        _isCore: 0
+        _isActive: 0
+    - rid: 1597717202956713988
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717202956713989
+        - rid: 1597717202956713990
+        _result: 1
+        _muted: 0
+    - rid: 1597717202956713989
+      type: {class: MoveWithInputInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: MoveWithInput
+        _name: Move With Input
+        _category: Adv Movement
+        _muted: 0
+        _target: 10
+        _targetTag: Player
+        _bodyArray: 
+        _device: 10
+        _directionVector: {x: 0, y: 0}
+        _directionVectorName: []
+        _moveAlong: 1
+        _axisType: 20
+        _range: 30
+        _rangeName: 
+        _gridSnapUnits: 0
+        _gridSnapUnitsName: 
+        _snapInterval: 0.1
+        _snapIntervalName: 
+        _speed: 10
+        _speedName: 
+        _placeOnSurface: 1
+        _placeOnSurfaceName: 
+    - rid: 1597717202956713990
+      type: {class: FaceForwardInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Movement,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: FaceForward
+        _name: Face Movement
+        _category: Adv Rotation
+        _muted: 0
+        _angle: 90
+        _angleValueName: 
+        _mode: 0
+        _value: 0.1
+        _valueValueName: 
+        _easing: 0
+        _onlyTurnWhenMoving: 0
+        _lookStraightAhead: 1
+    - rid: 1597717202956713991
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717202956713992
+        - rid: 1597717202956713993
+        - rid: 1597717202956713994
+        _result: 1
+        _muted: 0
+    - rid: 1597717202956713992
+      type: {class: OnKeyInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnKey
+        _name: On Key Press
+        _category: Input
+        _muted: 0
+        _key: 1
+        _inputState: 2
+    - rid: 1597717202956713993
+      type: {class: IsGroundedInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: IsGrounded
+        _name: Grounded
+        _category: Proximity
+        _muted: 0
+        _filter: 0
+        _tag: 
+    - rid: 1597717202956713994
+      type: {class: ApplyForceUpInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Physics,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ApplyForceUp
+        _name: "Apply Force \u2191 Up"
+        _category: Forces
+        _muted: 0
+        _force: 5
+        _forceValueName: 
+        _duration: 0
+        _durationValueName: 
+        _maxSpeed: 0.2
+        _maxSpeedName: 
+    - rid: 1597717202956713995
+      type: {class: OnStartInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnStart
+        _name: On Start
+        _category: General
+        _muted: 0
+    - rid: 1597717202956713996
+      type: {class: UsePhysicsInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.Physics,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: UsePhysicsInstructionTile
+        _name: Use Physics
+        _category: Physics
+        _muted: 0
+        _value: 1
+        _valueValueName: 
+    - rid: 1597717202956713998
+      type: {class: MonaBrainPage, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructions:
+        - rid: 1597717202956714001
+        _name: Type2
+        _isCore: 0
+        _isActive: 0
+    - rid: 1597717202956713999
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717202956714002
+        - rid: 1597717202956714003
+        _result: 1
+        _muted: 0
+    - rid: 1597717202956714000
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles:
+        - rid: 1597717202956714004
+        - rid: 1597717202956714005
+        _result: 1
+        _muted: 0
+    - rid: 1597717202956714001
+      type: {class: Instruction, ns: Mona.SDK.Brains.Core.Control, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _instructionTiles: []
+        _result: 1
+        _muted: 0
+    - rid: 1597717202956714002
+      type: {class: OnKeyInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnKey
+        _name: On Key Press
+        _category: Input
+        _muted: 0
+        _key: 41
+        _inputState: 2
+    - rid: 1597717202956714003
+      type: {class: ChangeStateInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ChangeState
+        _name: Change State
+        _category: General
+        _muted: 0
+        _changeState: Type1
+        _stateValueName: 
+    - rid: 1597717202956714004
+      type: {class: OnKeyInstructionTile, ns: Mona.SDK.Brains.Tiles.Conditions, asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: OnKey
+        _name: On Key Press
+        _category: Input
+        _muted: 0
+        _key: 42
+        _inputState: 2
+    - rid: 1597717202956714005
+      type: {class: ChangeStateInstructionTile, ns: Mona.SDK.Brains.Tiles.Actions.General,
+        asm: com.monaverse.sdk.brains.runtime}
+      data:
+        _id: ChangeState
+        _name: Change State
+        _category: General
+        _muted: 0
+        _changeState: Type2
+        _stateValueName: 

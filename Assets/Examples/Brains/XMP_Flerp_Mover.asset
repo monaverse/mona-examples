@@ -116,8 +116,8 @@ MonoBehaviour:
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
         _name: RNG_TurnAngle
-        _value: -164.59644
-        _defaultValue: -164.59644
+        _value: -147.74985
+        _defaultValue: -147.74985
         _roundingType: 0
         _minMaxType: 10
         _min: -360
@@ -275,8 +275,8 @@ MonoBehaviour:
       type: {class: MonaVariablesFloat, ns: Mona.SDK.Core.State.Structs, asm: com.monaverse.sdk.core.runtime}
       data:
         _name: Idle_Wait
-        _value: 1.3042372
-        _defaultValue: 1.3042372
+        _value: 0.6623371
+        _defaultValue: 0.6623371
         _roundingType: 0
         _minMaxType: 10
         _min: 0.5
